@@ -19,7 +19,7 @@ spec:
       - name: grade-submission-api
         image: ghcr.io/sntushelo/kubernetes-cicd-tutorial:213a1be37832bdd824f64df88e1965afbdc197eb
         ports:
-        - containerPort: 3000
+        - containerPort: 300030
         resources:
           limits:
             memory: "256Mi"
@@ -38,5 +38,5 @@ spec:
     app: grade-submission-api
   ports:
   - port: 80
-    targetPort: 3000
+    targetPort: 300030
   type: ClusterIP
