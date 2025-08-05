@@ -56,14 +56,14 @@ spec:
 
 To allow Kubernetes to pull images from GitHub Container Registry:
 
-```yaml
-kubectl create secret docker-registry ghcr-secret \\
+```kubectl create secret docker-registry ghcr-secret \\
   --docker-server=ghcr.io \\
   --docker-username=YOUR_USERNAME \\
   --docker-password=YOUR_PAT \\
   --namespace=default
 ```
-```kubectl create secret docker-registry ghcr-secret --docker-server=ghcr.io --docker-username=sntushelo --docker-password=YourGitHubRegistryToken --namespace=default
+```
+kubectl create secret docker-registry ghcr-secret --docker-server=ghcr.io --docker-username=sntushelo --docker-password=YourGitHubRegistryToken --namespace=default
 ```
 ### Become a Cloud and DevOps Engineer
 
